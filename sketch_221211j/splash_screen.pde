@@ -1,12 +1,36 @@
-float startX, startY, startWidth, startHeight;
-//
-void splashScreen() {
-  /*Note: any visually-based code running in SetUp() controlled by MouseClick
-   - background image
-   */
+float startX, startY, startWidth, startHeight, quitButtonX,quitButtonY,quitButtonWidth, quitButtonHeight;
+
+void splashScreen() 
+{
+  //fullScreen(); //displayWidth, displayHeight
+  appWidth = width; 
+  appHeight = height;
   //
-  /*Any other code for Splash Screen goes below
-   - Start Button
+  //Population
+  float centerX = appWidth * 1/2; //Point
+  float centerY = appHeight * 1/2; //Point
+  quitButtonX = centerX - ( appWidth * 1/4 );
+  quitButtonY = centerY - ( appHeight * 1/4 );
+  quitButtonWidth = appWidth * 1/2; //Line not point, thus use formula
+ quitButtonHeight = appHeight * 1/2; //Line not point, thus use formula}
+  
+//
+ /*
+ 
+   
+  //
+
+ /*ant other code goes below
+void OS_Start() {
+  //OS Level Start Button
+  start = true;
+  println("To Start, Press the Space Bar");
+  //
+}//End OS_Start
+ 
+ 
+ 
+ //
    - Any other instructions
    - Splash Screen Details
    */
