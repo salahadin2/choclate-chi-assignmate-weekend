@@ -1,7 +1,8 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false, splashScreenStart=false;
+Boolean OS_On=true, splashScreenStart=false;
 color resetDefaultInk=#000000, white=#FFFFFF, purple=#FF00FF;
+
 /* Night Mode Comment
  Purple not for Night Mode, full BLUE
  resetDefaultInk is Night Mode friendly
@@ -15,10 +16,13 @@ void setup() {
   //Display Algorithm from Hello World
   display(); //Purpose: CANVAS fits in monitor & dimension size is known
   //smaller & larger dimension from Display Algorithm
+  
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
   population(); //Values based on DISPLAY
   textSetup();
   imageSetup();
+  //
+  
 }//End setup
 //
 void draw() {
